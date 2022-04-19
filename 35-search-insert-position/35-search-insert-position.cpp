@@ -1,18 +1,18 @@
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
-        int s=0;
-        int e=nums.size()-1;
-        int mid=(s+(e-1)/2);
-        while(s<=e)
+        int l = 0;
+        int h = nums.size()-1;
+        int mid = (l+(h-l)/2);
+        while(l <= h)
         {
             if(target == nums[mid])
                 return mid;
             else if(target < nums[mid])
-                e = mid - 1;
+                h = mid - 1;
             else
-                s = mid + 1;
-            mid = (s+(e-s)/2);
+                l = mid + 1;
+            mid = (l+(h-l)/2);
         }
         return mid;
     }
