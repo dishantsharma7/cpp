@@ -8,7 +8,7 @@ public:
         for(int i=0;i<n;i++){
             sum+=nums[i];
         }
-        return (exp-sum);
+        return exp-sum;
         
     }
 };
