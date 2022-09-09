@@ -9,7 +9,6 @@ public:
             if(profit<prices[i]-min)
                 profit=prices[i]-min;
         }
-        return profit;
-        
+        return profit;        
     }
 };
